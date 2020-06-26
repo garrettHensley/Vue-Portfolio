@@ -1,0 +1,54 @@
+{
+  "apps": [
+    {
+      "name": "Vue Todo",
+      "img": "../todo.png",
+      "source": "https://github.com/garrettHensley/vue-todo-2",
+      "pages": "https://garretthensley.github.io/vue-todo-2/",
+      "description": "CRUD(Create, read, update, delete) vue app, which maintains a todo list. Features a completed list."
+    },
+    {
+      "name": "Marvel DB",
+      "img": "../todo.png",
+      "source": "https://github.com/garrettHensley/marvel-db/",
+      "pages": "https://garretthensley.github.io/marvel-db/",
+      "description": "Search for your favorite Marvel characters, heroes and villains. Uses a Marvel API, to get character and comic data."
+    },
+    {
+      "name": "WeatherVue",
+      "img": "../weather.png",
+      "source": "https://github.com/garrettHensley/WeatherVue",
+      "description": "A modern Vue app, using OpenWeather API to display a 5-day forcast for specified location."
+    },
+    {
+      "name": "Armstrong Realty",
+      "img": "../realEstate.png",
+      "source": "https://github.com/garrettHensley/real-estate",
+      "description": "Real Estate template website, using Vue and Random User Generator API to create fictional Realtors."
+    },
+    {
+      "name": "Palindrome",
+      "img": "../palindrome.png",
+      "source": "https://github.com/garrettHensley/palindrome",
+      "description": "A simple JavaScript app that determines if a word is a palindrome. Wrapped elegantly into a web app using Bootstrap."
+    },
+    {
+      "name": "jsPixel",
+      "img": "../jsPixel.png",
+      "source": "https://github.com/garrettHensley/jsPixels",
+      "description": "A JavaScript web app, that allows you to create pixel art with a basic color pallete. "
+    },
+    {
+      "name": "Tribute",
+      "img": "../tribute.png",
+      "source": "https://github.com/garrettHensley/tribute",
+      "description": "A sample tribute page, created only using HTML and Boostrap."
+    },
+    {
+      "name": "rot13",
+      "img": "../rot13.png",
+      "source": "https://github.com/garrettHensley/rot13",
+      "description": "Created using pure JavaScript. ROT13 is a cipher that take a phrase and shifts all letters by 13."
+    }
+  ]
+}
