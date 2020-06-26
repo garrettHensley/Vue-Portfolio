@@ -1,25 +1,25 @@
 <template>
   <div id="app" class="">
-    <Top />
-    <Socials />
+    <Header />
     <About class="mt-3" />
     <Work />
+    <Socials />
   </div>
 </template>
 
 <script>
-import Top from "@/components/Top.vue";
-import Socials from "@/components/Socials.vue";
+import Header from "@/components/Header.vue";
 import Work from "@/components/Work.vue";
 import About from "@/components/About.vue";
+import Socials from '@/components/Socials.vue';
 
 export default {
   name: "App",
   components: {
-    Top,
-    Socials,
+    Header,
     Work,
     About,
+    Socials
   },
 };
 </script>
@@ -46,7 +46,7 @@ html body {
 .bg-second {
   background-color: #080c18 !important;
   color: #e9e9e0;
-  opacity: 0.4;
+  opacity: 0.8;
   backdrop-filter: saturate(140%) blur(0.5em) hue-rotate(120deg);
 }
 .shadows-main {

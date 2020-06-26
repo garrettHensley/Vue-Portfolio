@@ -9,8 +9,8 @@
     },
     {
       "name": "Marvel DB",
-      "img": "../todo.png",
-      "source": "https://github.com/garrettHensley/marvel-db/",
+      "img": "../marvel.png",
+      "source": "https://github.com/garrettHensley/marvel-db",
       "pages": "https://garretthensley.github.io/marvel-db/",
       "description": "Search for your favorite Marvel characters, heroes and villains. Uses a Marvel API, to get character and comic data."
     },
