@@ -7,37 +7,18 @@
             <b-list-group-item
               v-for="(app, index) in apps"
               :key="app.key"
-              @click="
-                getSelection(
-                  app.name,
-                  app.description,
-                  app.img,
-                  app.source,
-                  app.pages
-                ),
-                  (show = index)
+              @click="selectApp(app, index)
               "
               class="clickable"
               :class="{ 'bg-second': show === index, 'bg-main': show != index }"
             >
-              <p class="lead">
-                {{ app.name }}
-              </p>
+              <div class="py-2 lead">{{ app.name }}</div>
             </b-list-group-item>
           </b-list-group>
         </b-col>
         <transition name="slide-fade">
           <b-col class="bg-second shadows-second rounded">
-            <a :href="selectPages" target="_blank">
-              <Job
-                :name="selectName"
-                :description="selectDescription"
-                :image="selectImage"
-                :link="selectLink"
-                :pages="selectPages"
-                class="bg-second"
-              />
-            </a>
+            <Job :app="selectedApp" class="bg-second" />
           </b-col>
         </transition>
       </b-row>
@@ -47,47 +28,28 @@
 
 <script>
 import Job from "@/components/Job.vue";
-import Apps from "@/assets/Apps/apps.json";
-
+import { apps } from "@/assets/Apps/apps.json";
 
 export default {
   components: {
-    Job,
+    Job
   },
   data() {
     return {
-      apps: Apps.apps,
-      selectName: null,
-      selectDescription: null,
-      selectImage: null,
-      selectLink: null,
-      selectPages: null,
-      show: 0,
+      apps: apps,
+      selectedApp: {},
+      show: 0
     };
   },
   mounted() {
-    this.init();
+    this.selectedApp = this.apps[0];
   },
   methods: {
-    init() {
-      // Set default selection
-      this.getSelection(
-        this.apps[0].name,
-        this.apps[0].description,
-        this.apps[0].img,
-        this.apps[0].source,
-        this.apps[0].pages
-      );
-    },
-    getSelection(name, description, image, link, pages) {
-      // get data from selected job and send it to Job component
-      this.selectName = name;
-      this.selectDescription = description;
-      this.selectImage = image;
-      this.selectLink = link;
-      this.selectPages = pages;
-    },
-  },
+    selectApp(app, index) {
+      this.selectedApp = app;
+      this.show = index;
+    }
+  }
 };
 </script>
 

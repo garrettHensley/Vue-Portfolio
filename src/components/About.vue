@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import SectionHeader from '@/components/SectionHeader.vue';
-import AboutContainer from '@/components/AboutContainer.vue';
+import SectionHeader from "@/components/SectionHeader.vue";
+import AboutContainer from "@/components/AboutContainer.vue";
 
 export default {
   components: {
@@ -16,5 +16,3 @@ export default {
   }
 };
 </script>
-
-<style scoped></style>

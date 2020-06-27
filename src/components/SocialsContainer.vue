@@ -1,27 +1,35 @@
 <template>
   <div>
     <div class="d-flex justify-content-around text-dark">
-      <!--
-    <img src="@/assets/GitHub.png" class="avatar" alt="GitHub" />
--->
-      <b-container class="shadows-main">
-        <h4><a href="https://github.com/garrettHensley" target="_blank"  class="text-dark">GitHub</a></h4>
-      </b-container>
-      <b-container class="shadows-second">
-        <h4><a href="http://garretthensley.me/resume.html" target="_blank" class="text-dark">Resume</a></h4>
-      </b-container>
-      <b-container class="shadows-second">
-        <h4><a href="mailto:garrettmichaelhensley@gmail.com" target="_blank"  class="text-dark">Email</a></h4>
-      </b-container>
+      <template v-for="link in links">
+        <b-button
+          :href="link.href"
+          target="_blank"
+          :key="link.name"
+          block
+          variant="bg-second"
+          class="shadows-second"
+        >
+          <h4>{{link.name}}</h4>
+        </b-button>
+      </template>
     </div>
-    <p class="my-3 pb-3">
-      Feel free to reach out to me, I'm more than happy to answer any questions.
-    </p>
+    <p class="my-3 pb-3">Feel free to reach out to me, I'm more than happy to answer any questions.</p>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      links: [
+        { name: "GitHub", href: "https://github.com/garrettHensley" },
+        { name: "Resume", href: "http://garretthensley.me/resume.html" },
+        { name: "Email", href: "mailto:garrettmichaelhensley@gmail.com" }
+      ]
+    };
+  }
+};
 </script>
 
 <style scoped>
