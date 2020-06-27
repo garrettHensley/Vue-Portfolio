@@ -1,28 +1,33 @@
 <template id="job" class="bg-second border">
   <b-container id="job" class="text-light">
-    <p class="lead">
-      {{ name }}
+    <p class="h1 py-3">{{ app.name }}</p>
+    <img :src="app.img" class="img-fluid d-none d-lg-block" />
+    <p class="lead d-flex justify-content-around pt-3">
+      <b-button
+        variant="primary"
+        v-b-tooltip.hover
+        :title="'Take a look at the codebase for ' + app.name "
+        :href="app.source"
+        target="_blank"
+      >Codebase</b-button>
+      <b-button
+        v-if="app.pages"
+        variant="primary"
+        v-b-tooltip.hover
+        :title="'Here\'s a sneak peek of ' + app.name"
+        :href="app.pages"
+        target="_blank"
+      >Demo</b-button>
     </p>
-    <img :src="image" class="img-fluid d-none d-lg-block" />
-    <p class="lead"><a :href="link" target="_blank">{{ link }}</a></p>
-    <p class="lead">{{ description }}</p>
+    <p class="lead">{{ app.description }}</p>
   </b-container>
 </template>
 
 <script>
 export default {
   props: {
-    name: String,
-    description: String,
-    link: String,
-    image: String,
-    pages: String,
-  },
-  methods: {
-    getUrl() {
-      return this.name.replace(" ", "");
-    },
-  },
+    app: Object
+  }
 };
 </script>
 

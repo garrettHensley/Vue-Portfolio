@@ -10,10 +10,9 @@
         My passions include technology, eSports, mountain biking, and
         <span
           v-b-popover.hover.v-info="
-            'Name a coder who doesnt love coffee. Im waiting.'
+            'Name a coder who doesn\'t love coffee. I\'m waiting.'
           "
-          >coffee</span
-        >. I consider myself self-motivated, fast-learning, highly energetic,
+        >☕</span>. I consider myself self-motivated, fast-learning, highly energetic,
         and adaptable, which I believe makes me compatible with nearly any group
         of people.
       </p>
@@ -35,12 +34,3 @@
     </b-container>
   </div>
 </template>
-
-<script>
-
-export default {
-
-};
-</script>
-
-<style scoped></style>

@@ -6,17 +6,13 @@
 </template>
 
 <script>
-import JobContainer from '@/components/JobContainer.vue';
-import SectionHeader from '@/components/SectionHeader.vue';
+import JobContainer from "@/components/JobContainer.vue";
+import SectionHeader from "@/components/SectionHeader.vue";
 
 export default {
   components: {
     JobContainer,
     SectionHeader
-  },
+  }
 };
 </script>
-
-<style scoped>
-
-</style>
