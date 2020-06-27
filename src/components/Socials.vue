@@ -10,9 +10,7 @@
 import SocialsContainer from "@/components/SocialsContainer.vue";
 export default {
   components: {
-    SocialsContainer,
-  },
+    SocialsContainer
+  }
 };
 </script>
-
-<style scoped></style>
