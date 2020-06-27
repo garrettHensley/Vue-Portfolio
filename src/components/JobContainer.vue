@@ -7,8 +7,7 @@
             <b-list-group-item
               v-for="(app, index) in apps"
               :key="app.key"
-              @click="selectApp(app, index)
-              "
+              @click="selectApp(app, index)"
               class="clickable"
               :class="{ 'bg-second': show === index, 'bg-main': show != index }"
             >
@@ -32,13 +31,13 @@ import { apps } from "@/assets/Apps/apps.json";
 
 export default {
   components: {
-    Job
+    Job,
   },
   data() {
     return {
       apps: apps,
       selectedApp: {},
-      show: 0
+      show: 0,
     };
   },
   mounted() {
@@ -48,8 +47,8 @@ export default {
     selectApp(app, index) {
       this.selectedApp = app;
       this.show = index;
-    }
-  }
+    },
+  },
 };
 </script>
 

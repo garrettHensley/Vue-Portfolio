@@ -3,7 +3,8 @@
     <b-container class="bg-main shadows-main">
       <p>
         Hello, and welcome to my portfolio. My names Garrett, and as you may
-        have guessed I am a web developer. I am currently seeking an entry level Web Developer position.
+        have guessed I am a web developer. I am currently seeking an entry level
+        Web Developer position.
       </p>
 
       <p>
@@ -12,7 +13,8 @@
           v-b-popover.hover.v-info="
             'Name a coder who doesn\'t love coffee. I\'m waiting.'
           "
-        >☕</span>. I consider myself self-motivated, fast-learning, highly energetic,
+          >☕</span
+        >. I consider myself self-motivated, fast-learning, highly energetic,
         and adaptable, which I believe makes me compatible with nearly any group
         of people.
       </p>
