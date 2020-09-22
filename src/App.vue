@@ -1,9 +1,18 @@
 <template>
-  <div id="app" class="">
+  <div id="app" v-scroll="fader">
     <Header />
-    <About class="mt-3" />
-    <Work />
-    <Socials />
+    <b-container
+      id="stuff-container"
+      class="py-2 shadows-second"
+      :style="{ opacity: stuffOpacity }"
+      fluid
+    >
+      <b-container fluid class="filter py-2">
+        <About class="mt-3" />
+        <Work />
+        <Socials />
+      </b-container>
+    </b-container>
   </div>
 </template>
 
@@ -11,15 +20,44 @@
 import Header from "@/components/Header.vue";
 import Work from "@/components/Work.vue";
 import About from "@/components/About.vue";
-import Socials from '@/components/Socials.vue';
+import Socials from "@/components/Socials.vue";
 
 export default {
   name: "App",
+  data() {
+    return {
+      stuffOpacity: 50,
+    };
+  },
   components: {
     Header,
     Work,
     About,
-    Socials
+    Socials,
+  },
+  created() {},
+  destroyed() {
+    document.addEventListener("scroll", this.fader());
+  },
+  methods: {
+    fader() {
+      //do something
+      console.log(window.scrollY);
+      this.stuffOpacity = window.scrollY / 500;
+    },
+  },
+  directives: {
+    scroll: {
+      // do
+      inserted: function(el, binding) {
+        let f = function(evt) {
+          if (binding.value(evt, el)) {
+            window.removeEventListener("scroll", f);
+          }
+        };
+        window.addEventListener("scroll", f);
+      },
+    },
   },
 };
 </script>
@@ -29,6 +67,7 @@ export default {
 html body {
   background-image: url("~@/assets/mountain.jpg");
   background-size: cover;
+  background-attachment: fixed;
 }
 #app {
   font-family: "Lato", sans-serif;
@@ -36,7 +75,12 @@ html body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #282a3d;
-  margin-top: 60px;
+}
+#stuff-container {
+  background: linear-gradient(0deg, #ee81c8 0%, #051f2b 100%);
+
+  background-size: cover;
+  z-index: 2 !important;
 }
 .bg-main {
   background-color: #e9e9e0 !important;

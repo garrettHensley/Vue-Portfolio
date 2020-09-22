@@ -2,7 +2,7 @@
   <div>
     <b-container id="job-container">
       <b-row align-v="stretch">
-        <b-col>
+        <b-col sm="6">
           <b-list-group>
             <b-list-group-item
               v-for="(app, index) in apps"
