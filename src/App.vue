@@ -77,7 +77,7 @@ html body {
 	color: #282a3d;
 }
 #stuff-container {
-	background: linear-gradient(90deg, #360033 0%, #0b8793 100%);
+	background: linear-gradient(90deg, #141E30 0%, #243B55 100%);
 
 	background-size: cover;
 	z-index: 2 !important;
@@ -92,7 +92,7 @@ html body {
 }
 .bg-second {
 	background-color: #080c18 !important;
-	color: #e9e9e0;
+	color: #ffff0f;
 	opacity: 0.8;
 	backdrop-filter: saturate(140%) blur(0.5em) hue-rotate(120deg);
 }

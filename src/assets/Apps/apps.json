@@ -11,7 +11,6 @@
 			"name": "NAPD Gaming",
 			"img": "../napd.png",
 			"source": "https://github.com/garrettHensley/NAPD-Community-Site",
-			"pages": "https://napdgaming.com",
 			"description": "A website for the NAPD Community's Mordhau servers. Site gathers from an API server data, and also displays server rules."
 		},
 		{
@@ -25,7 +24,6 @@
 			"name": "UPL Esports",
 			"img": "../upl.png",
 			"source": "https://github.com/garrettHensley/UPL-Esports",
-			"pages": "https://uplesports.com",
 			"description": "A website for finding E-Sports tournaments, and E-Sports related news. Uses a headless CMS to create content posts."
 		},
 		{

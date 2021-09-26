@@ -49,7 +49,7 @@ export default {
 	width: 5em;
 	border-radius: 50%;
 	border: white;
-	box-shadow: -10px -10px 20px 0px rgb(224, 216, 216),
+	box-shadow: -1px -1px 2px 0px rgba(224, 216, 216, 0.397),
 		5px 5px 20px 0px rgb(68, 67, 67);
 }
 </style>
