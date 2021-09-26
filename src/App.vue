@@ -42,6 +42,7 @@ export default {
 	methods: {
 		fader() {
 			//do something
+			//scrollly boy really cool effect
 			console.log(window.scrollY);
 			this.stuffOpacity = window.scrollY / 500;
 		},
@@ -77,6 +78,7 @@ html body {
 	color: #282a3d;
 }
 #stuff-container {
+
 	background: linear-gradient(90deg, #141E30 0%, #243B55 100%);
 
 	background-size: cover;
