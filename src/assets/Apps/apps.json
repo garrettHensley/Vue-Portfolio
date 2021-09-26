@@ -5,7 +5,7 @@
 			"img": "../marvel.png",
 			"source": "https://github.com/garrettHensley/marvel-db",
 			"pages": "https://garretthensley.github.io/marvel-db/",
-			"description": "Search for your favorite Marvel characters, heroes AND villains(!!!). Uses a Marvel API, to get character and comic data."
+			"description": "Search for your favorite Marvel characters; heroes AND villains(!!). Uses a Marvel API, to get character and comic data."
 		},
 		{
 			"name": "NAPD Gaming",
@@ -42,7 +42,7 @@
 			"name": "WeatherVue",
 			"img": "../weather.png",
 			"source": "https://github.com/garrettHensley/WeatherVue",
-			"description": "A modern Vue app, using OpenWeather API to display a 5-day forcast for specified location."
+			"description": "A Vue app, using OpenWeather API to display a 5-day forcast for specified location."
 		},
 
 		{
